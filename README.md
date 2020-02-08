@@ -8,4 +8,12 @@ The goal is to demonstrate a mechanism that could be used, for example, to wait 
 
 First of all, copy the `env.example` file into `.env` and adjust the values using your SignalWire project credentials.
 
-Start the application with `dotenv ruby main.rb`
+Start the application with `dotenv ruby main.rb`.
+
+Set up a number or SIP domain app to point at `APP_URL/receive`.
+
+Call the number and listen to a bit of cool jazz.
+
+Go to `APP_URL` then click on the call SID of the call you want to redirect.
+
+The `APP_CALL_DESTINATION` will be dialed.
