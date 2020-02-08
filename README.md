@@ -7,3 +7,5 @@ The goal is to demonstrate a mechanism that could be used, for example, to wait 
 ## Usage
 
 First of all, copy the `env.example` file into `.env` and adjust the values using your SignalWire project credentials.
+
+Start the application with `dotenv ruby main.rb`
