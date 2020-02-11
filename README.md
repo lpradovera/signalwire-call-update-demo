@@ -33,7 +33,8 @@ The call SID has to be saved somehow by the server generating the LAML.
 
 That call SID is referenced in a REST API request that replaces the existing document with a new one:
 
-```curl https://example.signalwire.com/api/laml/2010-04-01/Accounts/{AccountSid}/Calls/{Sid}.json \
+```
+curl https://example.signalwire.com/api/laml/2010-04-01/Accounts/{AccountSid}/Calls/{Sid}.json \
   -X POST \
   --data-urlencode "url=https://your-new-lamrl-url.com" \
   --data-urlencode "fallbackUrl=https://your-new-lamrl-url.com" \
@@ -42,7 +43,8 @@ That call SID is referenced in a REST API request that replaces the existing doc
 
 The URL you pass in in the above request will be sending the call to the final destination:
 
-```<?xml version="1.0" encoding="UTF-8"?>
+```
+<?xml version="1.0" encoding="UTF-8"?>
 <Response>
     <Dial>
         <Sip>sip:alice@example.com</Sip>
